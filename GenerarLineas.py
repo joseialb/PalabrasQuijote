@@ -17,12 +17,12 @@ def main(filename):
 		dado = random.randint(0, 100)
 		if dado <= porcentaje:
 			lineas = data.count()
-			porCiento = (lineas // 100)*porcentaje
+			porCiento = int( (lineas // 100)*porcentaje)
 			resultado = data.take(porCiento)
 			devuelve = unlines(resultado)
-			with open("quijote_s05.txt", "a") as archivo:
+			with open("quijote_s05.txt", "w") as archivo:
 				archivo.write(devuelve)
-			
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print(f"Faltan argumentos: python3 {sys.argv[0]} <file>")

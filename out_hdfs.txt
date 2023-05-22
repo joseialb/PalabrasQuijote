@@ -1,0 +1,2 @@
+Resultado ContarPalabras quijote_s05.txt	210019
+Resultado ContarPalabras quijote.txt:		381216

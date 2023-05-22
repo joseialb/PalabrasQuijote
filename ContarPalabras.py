@@ -14,8 +14,9 @@ def main(filename):
         data = sc.textFile(filename)
 
         words_rdd = data.map(lambda x: len(x.split()))
-        print('Resultado', words_rdd.sum())
-        
+        n =  words_rdd.sum()
+        print('\n\n\n\n\n\n\n\nResultado',n)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
